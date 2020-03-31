@@ -1,0 +1,1 @@
+# sweetstore_manager
