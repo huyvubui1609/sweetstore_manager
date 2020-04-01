@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2DFFEB3B"
+    android:orientation="vertical"
+    tools:context=".activity.AdminSanPham">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_green_light">
+
+        <ImageButton
+            android:id="@+id/btnBacksanpham"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center"
+            android:background="@android:color/holo_green_light"
+            android:src="@drawable/abc_vector_test"></ImageButton>
+
+        <TextView
+            android:id="@+id/tvsanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Danh Sách Sản Phẩm"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="200">
+
+                <EditText
+                    android:id="@+id/editTexttenhanghoa"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập tên hàng"
+                    android:inputType="text"
+                    android:maxLines="1"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="10000">
+
+                <EditText
+                    android:id="@+id/editTextmotahanghoa"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập mô tả"
+                    android:inputType="text"
+                    android:maxLines="1"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/editTexthinhhanghoa"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nhập URL ảnh"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/editTextgiahanghoa"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:digits="0123456789"
+                    android:hint="Nhập giá"
+                    android:inputType="phone"
+                    android:maxLines="1"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <EditText
+                    android:id="@+id/editTextidhanghoa"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:digits="12"
+                    android:hint="Loại"
+                    android:inputType="phone"
+                    android:maxLength="1"></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnthem"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_red_light"
+                android:inputType="textPersonName"
+                android:text="Add"
+                android:textColor="@android:color/white"></Button>
+            <!--        <Button-->
+            <!--            android:id="@+id/btnclear"-->
+            <!--            android:text="Clear"-->
+            <!--            android:layout_margin="5dp"-->
+            <!--            android:layout_width="100dp"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:background="@android:color/white"-->
+            <!--            android:inputType="textPersonName"></Button>-->
+            <Button
+                android:id="@+id/btnsua"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/black"
+                android:inputType="textPersonName"
+                android:text="Update"
+                android:textColor="@android:color/white"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listviewhanghoa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"></ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_banh"
+            android:icon="@drawable/icons8cookie"
+            android:title="Bánh" />
+        <item
+            android:id="@+id/nav_keo"
+            android:icon="@drawable/icons8candy"
+            android:title="Kẹo" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Thông Tin Liên Hệ" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/icons8exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

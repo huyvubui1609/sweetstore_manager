@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activity.AdminActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_orange_light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sweets Store"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Chào Mừng Bạn Đến Với Cửa Hàng Bánh Kẹo"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="30dp"
+                android:gravity="center|left"
+                android:text="Khách Hàng "
+                android:textColor="@android:color/black"
+                android:textSize="30sp"></TextView>
+
+            <ImageButton
+                android:id="@+id/btnkhachhang"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/icons8addcart"
+                android:gravity="center|right"></ImageButton>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="30dp"
+                android:gravity="center|left"
+                android:text="Admin          "
+                android:textColor="@android:color/black"
+                android:textSize="30sp"></TextView>
+
+            <ImageButton
+                android:id="@+id/btnnguoiquanly"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/icons8landlord"
+                android:gravity="center|right"></ImageButton>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

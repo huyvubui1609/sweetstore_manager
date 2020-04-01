@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ThongTinLienHe">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_purple">
+
+        <ImageButton
+            android:id="@+id/btnBackThongTin"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left|center"
+            android:background="@android:color/holo_purple"
+            android:src="@drawable/abc_vector_test"></ImageButton>
+
+        <TextView
+            android:id="@+id/tvthongtin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Thông Tin Liên Hệ"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/images"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="30dp"
+                android:drawableLeft="@drawable/icons8location"
+                android:gravity="center"
+                android:text="Địa Chỉ: 155 Sư Vạn Hạnh, Phường 13, Quận 10, TP.HCM"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_margin="30dp"
+                android:drawableLeft="@drawable/icons8landlord"
+                android:gravity="center"
+                android:text="Chủ Shop: Mr.Tacos and Mrs.Candy"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:drawableLeft="@drawable/icons8ringingphone"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Số Điện Thoại: 0123456789
+
+                                 Email: admin@gmail.com"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
